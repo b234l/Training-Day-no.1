@@ -1,47 +1,68 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>To do List</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="t-day.css">
   </head>
+
   <body>
+
     <header>
       <h1>Training Day №1: To do List</h1>
       <nav>
         <ul>
-          <li>О проекте</li>
+          <li>&#8520  О проекте</li>
         </ul>
     </header>
+
     <main>
-      <h1>To do List</h1>
-      <form id="taskForm">
-        <label for="taskInput">Задача:</label>
-        <input type="text" id="taskInput" required>
-        <label for="prioritySelect">Важность:</label>
-        <select id="prioritySelect" required>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-        </select>
-        <label for="descriptionInput">Описание:</label>
-        <textarea id="descriptionInput"></textarea>
-        <button type="submit">Добавить задачу</button>
-      </form>
-      <hr>
-      <ul id="taskList"></ul>
+      <div class="container">
+        <h1>To do List</h1>
+        <form id="taskForm">
+          <label for="taskInput" placeholder="Текст задачи">Задача:</label>
+          <input type="text" id="taskInput" required>
+          <label for="prioritySelect">Важность:</label>
+          <select id="prioritySelect" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <button type="submit">Добавить задачу</button>
+        </form>
+      </div>
     </main>
+
+    <br>
+    <main>
+      <div id="task-table">
+      <ul id="taskList"></ul>
+      <table id="taskTable">
+        <thead>
+          <tr>
+            <th>Задача</th>
+            <th>Важность</th>
+            <th>Статус</th>
+          </tr>
+        </thead>
+        <tbody id="taskTableBody"></tbody>
+      </table>
+    </div>
+    </main>
+
     <footer>
       <h3>&copy; 2023</h3>
     </footer>
+    
     <script src="t-day.js"></script>
   </body>
 </html>
