@@ -21,34 +21,37 @@ header {
 
 h1 {
   color: #fff;
-  font-size: 24px;
+  font-size: 30px;
 }
 
-nav ul {
-  list-style-type: none;
+main {
+  padding: 0px 60px 30px;
+  margin: auto;
 }
 
 nav ul li {
   display: inline-block;
   margin-right: 10px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-nav ul li.active a {
-  color: #000;
   font-weight: bold;
+  font-size: 24px;
+  color:rgb(24, 96, 0);
 }
 
-main {
-  padding: 20px;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 form {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
 }
 
 label {
@@ -56,6 +59,7 @@ label {
   margin-bottom: 5px;
   font-weight: bold;
   color: #669966;
+  font-size: 24px;
 }
 
 input[type="text"],
@@ -66,42 +70,39 @@ textarea {
   margin-bottom: 10px;
 }
 
-button {
-  background-color: #669966;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
+#task-form {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 24px;
 }
 
-hr {
-  border: none;
-  border-top: 1px solid #ccc;
-  margin: 20px 0;
+#task-table {
+  margin-top: 20px;
+  margin-top: 20px;
+  font-size: 24px;
 }
 
-ul#taskList {
-  padding-left: 0;
-  margin: 0;
+
+table {
+  border-collapse: collapse;
+  width: 100%;
 }
 
-li.task {
-  background-color: #e2f2e2;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
 }
 
-li.task.completed {
-  opacity: 0.6;
+th {
+  background-color: #f2f2f2;
 }
 
-li.task .taskDetails {
-  display: flex;
+tr:nth-child(even) {
+  background-color: #f9f9f9;
 }
 
-li.task .taskDetails div {
-  flex: 1;
+.completed {
+  background-color: #c8e6c9;
 }
 
 footer {
